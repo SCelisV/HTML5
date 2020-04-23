@@ -1,0 +1,33 @@
+
+body {
+    background-color:whitesmoke;
+}
+
+li {
+    color: red;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+}
+/* ojo las class tienen mayor jerarquía que las etiquetas */
+.p2 {
+    font-size: 20px;
+    text-align: left;
+    color: orangered;
+}
+
+.burlywood-box {
+    background-color:burlywood;
+    width: 800px;
+    height: 200px;
+    text-align: center;
+}
+
+.red-box {
+    background-color: aqua;
+    width: 400px;
+    height: 200px;
+}
+

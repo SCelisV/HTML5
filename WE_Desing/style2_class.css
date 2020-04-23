@@ -1,0 +1,31 @@
+
+
+.orange-h1{
+    color: orangered;
+    text-align: center;
+}
+
+.red-box{
+    background-color: red;
+}
+
+.p2 {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(43, 226, 98);
+}
+
+.list{
+    width: 800px;
+    height: 200px;
+    
+}
+.list ol{
+    display: inline;
+    float: left;
+}
+.list ul{
+    display: inline;
+    float: right;
+}
+

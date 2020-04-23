@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IronHack - Circus - Simple Web</title>
+    <link rel="stylesheet" href="/home/sc/Downloads/style3_class.css" />
+</head>
+<body>
+    <img id="img" />
+    <script>
+
+        var nombre= prompt("Cual es tu nombre: ?")
+        var apellido= prompt("Cual es tu apellido: ?")
+        var ciudad=prompt("Donde vives: ?")
+        var edad=promt("Cual es tu edad: ?")
+
+        if (edad < 18){
+            document.write("lo siento, " + nombre + " no tienes edad sufuciente para ver este contenido")
+            document.getElementById("img").src = "";
+        } else {
+            document.write("tu si puedes... " + nombre)
+            document.write("Hola, " + nombre + "" + apellido + " me alegra que vivas en " + ciudad)
+        }
+
+    
+    </script>
+
+
+    <h1 class="orange-h1">Esto es un título h1</h1>
+    <script rel="text/javascript" src="/home/sc/Downloads/fuctions.js"></script>
+</body>
+</html>
