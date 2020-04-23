@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML Forms
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML Forms
+        </h1>
+
+        <h2>The &lt;form&gt; Element: defines a form that is used to collect user input:</h2>
+
+        <h3>An HTML form contains form elements, there are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.</h3>
+
+        <h2>The &lt;input&gt; Element</h2>
+        
+        <h3>can be displayed in several ways, depending on the type attribute.</h3>
+
+        <form>
+            First name:<br>
+            <input type="text" name="firstname"><br>
+            Last name:<br>
+            <input type="text" name="lastname">
+        </form>
+
+        <h4>defines a one-line input field for text input</h4>
+
+        <h5>Also note that the default width of a text field is 20 characters.</h5>
+
+        <h2>Radio Button Inputs</h2>
+        
+        <h3>&lt;input type="radio"&gt; defines a radio button.</h3>
+        
+        <form id="1">
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other
+        </form>
+        
+        <h4>select ONE of a limited number of choices:</h4>
+
+        <h2>The Submit Button</h2>
+
+        <h3>
+                &lt;input type="submit"&gt; defines a button for submitting the form data to a form-handler.
+
+                The form-handler is typically a server page with a script for processing input data.
+                
+                The form-handler is specified in the form's action attribute:
+
+        </h3>
+    
+        <form action="/action_page.php">
+
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+        <h2>The Action Attribute</h2>
+
+        <h3>defines the action to be performed when the form is submitted.</h3>
+
+        <h4>&lt;form action="/action_page.php"&gt;</h4>
+        
+        <h5>If the action attribute is omitted, the action is set to the current page.</h5>
+
+        <h2>The Target Attribute</h2>
+
+        <h3>specifies if the submitted result will open in a new browser tab, a frame, or in the current window.</h3>
+        
+        <h4>The default value is "_self" which means the form will be submitted in the current window. <br>
+
+                To make the form result open in a new browser tab, use the value "_blank"</h4>
+
+        <h5>&lt;form action="/action_page.php" target="_blank"&gt;</form></h5>
+
+        <h5>Other legal values are "_parent", "_top", or a name representing the name of an iframe.</h5>
+
+        <h2>The Method Attribute</h2>
+
+        <h3>specifies the HTTP method (GET or POST) to be used when submitting the form data</h3>
+
+        <h4>GET: <p>the form values is visible in the address bar of the new browser tab</p></h4>
+        <h4>POST: <p>the form values is NOT visible in the address bar of the new browser tab.</p></h4>
+
+        <h2>When to Use GET?</h2>
+
+        <h3>The default method when submitting form data is GET. <br>
+
+        However, when GET is used, the submitted form data will be visible in the page address field:
+                
+        </h3>
+
+        <h4>/action_page.php?firstname=Mickey&lastname=Mouse</h4>
+
+        <h5>Notes on GET:
+
+                Appends form-data into the URL in name/value pairs <br>
+                The length of a URL is limited (about 3000 characters) <br>
+                Never use GET to send sensitive data! (will be visible in the URL) <br>
+                Useful for form submissions where a user want to bookmark the result <br>
+                GET is better for non-secure data, like query strings in Google</h5>
+
+        <h2>When to Use POST?</h2>
+
+        <h3>Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.</h3>
+    
+        <h5>Notes on POST:
+
+                POST has no size limitations, and can be used to send large amounts of data. <br>
+                Form submissions with POST cannot be bookmarked
+                </h5>
+ 
+        <h2>The Name Attribute</h2>
+
+        <h3>Each input field must have a name attribute to be submitted.
+
+                If the name attribute is omitted, the data of that input field will not be sent at all.</h3>
+
+        <form action="/action_page.php">
+            First name:<br>
+            <input type="text" value="Mickey"><br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>Grouping Form Data with &lt;fieldset&gt;&lt;/fieldset&gt;</h2>
+
+        <h3>The &lt;fieldset&gt; element is used to group related data in a form. <br>
+
+        The &lt;legend&gt; element defines a caption for the &lt;fieldset&gt; element.</h3>
+
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Personal information:</legend>
+              First name:<br>
+              <input type="text" name="firstname" value="Mickey"><br>
+              Last name:<br>
+              <input type="text" name="lastname" value="Mouse"><br><br>
+              <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        
+        
+
+    </body>
+</html>
+

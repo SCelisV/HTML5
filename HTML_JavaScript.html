@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML JavaScript
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                /* border: 1px solid black; */
+                border: 1px solid black;
+                /* border-collapse: collapse; */
+                border-collapse: collapse;
+            }
+            #p01{
+                color: red;
+                border: 1px solid black;
+                padding: 30px;
+                margin: 50px;
+                font-family: courier;
+                font-size: 120%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML JavaScript
+        </h1>
+
+        <h2>My First JavaScript</h2>
+
+        <h3>
+
+            <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+
+            <p id="demo"></p><br>
+
+        </h3>
+
+        <h2>The HTML &lt;script&gt; Tag</h2>
+
+        <p>Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.</p>
+
+        <p>To select an HTML element, JavaScript very often use the document.getElementById(id) method.</p>
+
+        <p>This JavaScript example writes "Hello JavaScript!" into an HTML element with id="p01":</p>
+
+        <h2>A Taste of JavaScript</h2>
+        
+        <p id="p01"></p>
+
+        <script>
+            document.getElementById("p01").innerHTML = "Hello JavaScript!";
+        </script> 
+
+
+            <script>document.getElementById("p01").style.fontSize = "50px";</script>
+            <script>document.getElementById("p01").style.color = "green";</script>
+            <script>document.getElementById("p01").style.backgroundColor = "yellow";</script>
+        
+
+        <h3></h3>
+
+        <img id="img01" src=".\images\cloud66.jpg" alt="test JavaScript" >
+        <!-- width="59px" height="59px" -->
+
+        <!-- OJO no se como decirle que la imagen esta en la carpera images?? &#46; &#47;-->
+        <!-- OJO no se como decirle que cambie el tamaño de la imagen -->
+
+        <script>document.getElementById("img01").src="cloud662.jpg";</script>
+        <!-- <script>document.getElementById("img01").width="195px";</script>
+        <script>document.getElementById("img01").height="102px";</script> -->
+
+        <h2>The HTML &lt;noscript&gt; Tag</h2>
+
+        <p><noscript>Sorry, your browser does not support JavaScript!</noscript></p>
+
+        
+    </body>
+</html>

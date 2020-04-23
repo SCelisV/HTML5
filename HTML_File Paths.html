@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML File Paths
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML File Paths
+        </h1>
+
+        <h2>File Paths: A file path describes the location of a file in a web site's folder structure.</h2>
+
+        &lt;img src="picture.jpg"&gt; - file is located in the same folder as the current page. <br>
+        &lt;img src="images/picture.jpg"&gt; - file is located in the images folder in the current folder <br>
+        &lt;img src="/images/picture.jpg"&gt; - file is located in the images folder at the root of the current web <br>
+        &lt;img src="../picture.jpg"&gt; - file is located in the folder one level up from the current folder <br>
+                
+        <h2>Absolute File Paths is the full URL to an internet file:</h2>
+
+            <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"><br>
+
+        <h2>Relative File Paths points to a file relative to the current page.</h2>
+
+        <h3> file is in the images folder located at the root of the current web: &lt;img src="/images/picture.jpg"&gt;</h3>
+
+            <img src="/images/picture.jpg" alt="Mountain">
+
+        <h3> file in the images folder located in the current folder: &lt;img src="images/picture.jpg"&gt;</h3>
+
+            <img src="images/picture.jpg" alt="Mountain">
+
+        <h3>a file in the images folder located in the folder one level above the current folder: &lt;img src="../images/picture.jpg"&gt;</h3>
+
+            <img src="../images/picture.jpg" alt="Mountain">
+
+        <h3>Best Practice</h3>
+        
+        
+        <h2>When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains. </h2>
+
+        
+    </body>
+</html>

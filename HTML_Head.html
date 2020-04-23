@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML Head
+        </title>
+        <base href="https://www.w3schools.com/images/" target="_blank">
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML Head
+        </h1>
+
+        <h2>is a container for metadata (data about data - about the HTML document) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</h2>
+
+        <h3>Metadata typically define the document title, character set, styles, links, scripts, and other meta information.</h3>
+
+        <h2>The HTML &lt;title&gt; Element defines the title of the document, and is required in all HTML/XHTML </h2>
+
+        <h2>The HTML &lt;style&gt; Element is used to define style information for a single HTML page</h2>
+
+        <h2>The HTML &lt;link&gt; Element is used to link to external style sheets</h2>
+
+        <link rel="stylesheet" href="mystyle.css">
+
+        <h2>The HTML &lt;meta&gt; Element is used to specify which character set is used, page description, keywords, author, and other metadata.</h2>
+
+        <h3>is used by browsers (how to display content), by search engines (keywords), and other web services</h3>
+
+        <h3>Define the character set used: &lt;meta charset="UTF-8"&gt;</h3>
+
+        <h3>Define a description of your web page: &lt;meta name="description" content="Free Web tutorials"&gt;</h3>
+
+        <h3>Define keywords for search engines: &lt;meta name="keywords" content="HTML, CSS, XML, JavaScript"&gt;</h3>
+
+        <h3>Define the author of a page: &lt;meta name="author" content="John Doe"&gt;</h3>
+
+        <h3>Refresh document every 30 seconds: &lt;meta http-equiv="refresh" content="30"&gt;</h3>
+
+        <h3>Setting The Viewport: </h3>
+
+        <h2>HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag.</h2>
+
+            <h4>The viewport is the user's visible area of a web page. <br>
+                It varies with the device, and will be smaller on a mobile phone than on a computer &lt;screen class="br"&gt;&lt;/screen&gt; <br>
+            
+                You should include the following &lt;meta&gt; viewport element in all your web pages: <br>
+
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br>
+            </h4>
+
+        <br>
+        <h4>A &lt;meta&gt; viewport element gives the browser instructions on how to control the page's dimensions and scaling. <br>
+
+            The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). <br>
+            
+            The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. <br>
+            
+            Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag: <br>
+        
+        </h4>
+
+        <h2>The HTML &lt;script&gt; Element is used to define client-side JavaScripts.</h2>
+
+        <h4>This JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":</h4>
+
+        &lt;script&gt; <br>
+                function myFunction {<br>
+                    document.getElementById("demo").innerHTML = "Hello JavaScript!";<br>
+                } <br>
+        &lt;/script&gt; <br>
+
+        <h2>The HTML &lt;base&gt; Element specifies the base URL and base target for all relative URLs in a page:</h2>
+
+        &lt;base href="https://www.w3schools.com/images/" target="_blank"&gt;
+
+        <img src="html5.gif">
+        <p>Since we have specified a base URL, the browser will look for the image "html5.gif" at "https://www.w3schools.com/images/html5.gif"</p>
+
+        <p><a href="https://www.w3schools.com">W3Schools</a></p>
+        <p>The link above opens in a new window. This is because the base target is set to "_blank".</p>
+
+        <h2>Omitting &lt;html&gt;, &lt;head&gt; and &lt;body&gt;?</h2>
+
+        <h3>According to the HTML5 standard; the html, the body, and the head tag can be omitted.</h3>
+
+    </body>
+</html>

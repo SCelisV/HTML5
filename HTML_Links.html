@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    
+<html>
+    <head>
+        <title>
+            HTML Links
+        </title>
+        <style>
+                a:link {
+                    color: green; 
+                    background-color: transparent; 
+                    text-decoration: none;
+                }
+                
+                a:visited {
+                    color: pink;
+                    background-color: transparent;
+                    text-decoration: none;
+                }
+                
+                a:hover {
+                    color: red;
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+                
+                a:active {
+                    color: yellow;
+                    background-color: transparent;
+                    text-decoration: underline;
+                }
+                </style>
+    </head>
+    <body>
+        <h2 id="Top">Top</h2>
+        <h1>
+            HTML Links
+        </h1>
+        <a href="http://www.w3schools.com">This is a link</a>
+
+        <p>HTML Links - Hyperlinks: When you move the mouse over a link</p>
+
+        <p>HTML Links - Syntax: are defined with the "a" tag: "a href="url" linktext "a"</p>
+        <p> - The href attribute specifies the destination address (https://www.w3schools.com/html/) of the link.</p>
+        <p> - The link text is the visible part (Visit our HTML tutorial).</p>
+        <p> - Clicking on the link text will send you to the specified address</p>        
+                
+            <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+        <p>Local Links (link to the same web site) is specified with a relative URL</p>
+        
+        <p> -  The href attribute specifies the destination address ("html_images.asp")</p>
+
+            <a href="html_images.asp">HTML Images</a>
+
+        <p>HTML Link Colors - By default </p>
+                
+                <p>An unvisited link is underlined and blue</p>
+                <p>A visited link is underlined and purple</p>
+                <p>An active link is underlined and red</p>
+                You can change the default colors, by using styles: view this definition of styles top </p>
+
+        <p>The target Attribute specifies where to open the linked document.</p>
+
+        <p>_blank - Opens the linked document in a new window or tab</p>
+
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+        <p>_self - Opens the linked document in the same window/tab as it was clicked (this is default)</p>
+        <p>_parent - Opens the linked document in the parent frame</p>
+        <p>_top - Opens the linked document in the full body of the window</p>
+        <a href="https://www.w3schools.com/html/" target="_top">HTML5 tutorial!</a>
+        <p>framename - Opens the linked document in a named frame</p>
+
+        <p>HTML Links - Image as Link</p>
+        <a href="default.asp">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+        </a>
+
+        <p>Link Titles - specifies extra information about an element</p>
+
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+        <p>HTML Links - Create a Bookmark: "id="Top" Top</p>
+        <p>add a link to the bookmark ("Jump to Top"), from within the same page:</p>
+        <a href="#Top">Jump to Top</a>
+
+        <p>add a link to the bookmark ("Jump to anotherpage"), from another page:</p>
+        <a href="html_demo.html#anotherpage">Jump to anotherpage</a>
+
+        <p>External Paths can be referenced with a full URL to link to a web page:</p>
+
+        <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+        <p>This example links to a page located in the html folder on the current web site:</p>
+
+        <a href="/html/default.asp">HTML tutorial</a>
+
+        
+
+    </body>
+</html>

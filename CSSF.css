@@ -1,0 +1,40 @@
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+/* article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block} */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.my-serif{font-family:serif}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.my-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.my-responsive{display:block;overflow-x:auto}
+/* .my-container:after,.my-container:before,.my-panel:after,.my-panel:before,.my-row:after,.my-row:before,.my-row-padding:after,.my-row-padding:before, */
+.my-cell-row:before,.my-cell-row:after,.my-clear:after,.my-clear:before,.my-bar:before,.my-bar:after{content:"";display:table;clear:both}
+.my-col,.my-half,.my-third,.my-twothird,.my-threequarter,.my-quarter{float:left;width:100%}
+/* .my-col.s1{width:8.33333%}.my-col.s2{width:16.66666%}.my-col.s3{width:24.99999%}.my-col.s4{width:33.33333%}
+.my-col.s5{width:41.66666%}.my-col.s6{width:49.99999%}.my-col.s7{width:58.33333%}.my-col.s8{width:66.66666%}
+.my-col.s9{width:74.99999%}.my-col.s10{width:83.33333%}.my-col.s11{width:91.66666%}.my-col.s12{width:99.99999%} */
+@media (min-width:601px){.my-col.m1{width:8.33333%}.my-col.m2{width:16.66666%}.my-col.m3,.my-quarter{width:24.99999%}.my-col.m4,.my-third{width:33.33333%}
+.my-col.m5{width:41.66666%}.my-col.m6,.my-half{width:49.99999%}.my-col.m7{width:58.33333%}.my-col.m8,.my-twothird{width:66.66666%}
+.my-col.m9,.my-threequarter{width:74.99999%}.my-col.m10{width:83.33333%}.my-col.m11{width:91.66666%}.my-col.m12{width:99.99999%}}
+@media (min-width:993px){.my-col.l1{width:8.33333%}.my-col.l2{width:16.66666%}.my-col.l3{width:24.99999%}.my-col.l4{width:33.33333%}
+.my-col.l5{width:41.66666%}.my-col.l6{width:49.99999%}.my-col.l7{width:58.33333%}.my-col.l8{width:66.66666%}
+.my-col.l9{width:74.99999%}.my-col.l10{width:83.33333%}.my-col.l11{width:91.66666%}.my-col.l12{width:99.99999%}}
+.my-content{max-width:980px;margin:auto}.my-rest{overflow:hidden}
+@media (max-width:600px){.my-modal-content{margin:0 10px;width:auto!important}.my-modal{padding-top:30px}
+.my-dropdown-hover.my-mobile .my-dropdown-content,.my-dropdown-click.my-mobile .my-dropdown-content{position:relative}	
+.my-hide-small{display:none!important}.my-mobile{display:block;width:100%!important}.my-bar-item.my-mobile,.my-dropdown-hover.my-mobile,.my-dropdown-click.my-mobile{text-align:center}
+.my-dropdown-hover.my-mobile,.my-dropdown-hover.my-mobile .my-btn,.my-dropdown-hover.my-mobile .my-button,.my-dropdown-click.my-mobile,.my-dropdown-click.my-mobile .my-btn,.my-dropdown-click.my-mobile .my-button{width:100%}}
+@media (max-width:768px){.my-modal-content{width:500px}.my-modal{padding-top:50px}}
+@media (min-width:993px){.my-modal-content{width:900px}.my-hide-large{display:none!important}.my-sidebar.my-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.my-hide-medium{display:none!important}}
+@media (max-width:992px){.my-sidebar.my-collapse{display:none}.my-main{margin-left:0!important;margin-right:0!important}}
+.my-row-padding,.my-row-padding>.my-half,.my-row-padding>.my-third,.my-row-padding>.my-twothird,.my-row-padding>.my-threequarter,.my-row-padding>.my-quarter,.my-row-padding>.my-col{padding:0 8px}
+.my-container,.my-panel{padding:0.01em 16px}.my-panel{margin-top:16px;margin-bottom:16px}
+/* Colors */
+.my-orange,.my-hover-orange:hover{color:#fff!important;background-color:orange!important}
+.my-light-orange,.my-hover-light-orange:hover{color:#000!important;background-color:#c3ad4a!important}
+.my-pale-orange,.my-hover-pale-orange:hover{color:#000!important;background-color:#ddffdd!important}
+.my-text-orange,.my-hover-text-orange:hover{color:##orange!important}
+.my-text-light-orange,.my-hover-text-light-orange:hover{color:#c3ad4a!important}
+.my-border-orange,.my-hover-border-orange:hover{border-color:##orange!important}
+.my-border-light-orange,.my-hover-border-light-orange:hover{border-color:#c3ad4a!important}
+.my-border-pale-red,.my-hover-border-pale-red:hover{border-color:#ffe7e7!important}.my-border-pale-orange,.my-hover-border-pale-orange:hover{border-color:#e7ffe7!important}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    
+<html>
+    <head>
+        <title>
+            HTML Images
+        </title>
+        <style>
+            body { 
+                background-image:url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png");
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>
+                HTML Images
+        </h1>
+        <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+        <br/>
+        <img src="pulpitrock.jpg" alt="Mountain View">
+        <br/>
+        <img src="img_girl.jpg" alt="Girl in a jacket">
+        <br/>
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+
+        <p>HTML Images Syntax: "img src="url" "</p>
+        <p>"img" tag is empty, it contains attributes only, and does not have a closing tag.
+            The src attribute specifies the URL (web address) of the image:</p>
+
+        <p>The alt Attribute: </p>
+        <p>provides an alternate text for an image, if the user for some reason cannot view it</p>
+
+        <img src="img_chania.jpg" alt="Flowers in Chania">
+
+        <p>example: </p>
+        
+        <img src="wrongname.gif" alt="Flowers in Chania">
+
+        <p>Image Size - Width and Height : style="width:500px;height:600px;"</p>
+
+        <img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;">
+
+        <p>The width and height attributes always defines the width and height of the image in pixels: width="500" height="600"</p>
+        <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+        <p>we suggest using the style attribute</p>
+
+        <p>Images in Another Folder - " src="./images/html5.gif""</p>
+
+        <img src="./images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+
+        <p>Images on Another Server - you can access images from any web address in the world</p>
+
+        <p>"src="https://www.w3schools.com/images/w3schools_green.jpg""</p>
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+        <p>Animated Images: "src="programming.gif""</p>
+        <img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
+
+        <p>Image as a Link: the "img" tag inside the "a" tag:</p>
+
+        <a href="">
+            <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;">
+        </a>
+
+        <p>Image Floating</p>
+
+        <p>CSS float property to let the image float to the right or to the left of a text:</p>
+
+        <p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+        The image will float to the right of the text.</p>
+            
+        <p><img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+        The image will float to the left of the text.</p>
+       
+        <p><img src="smiley.gif" alt="Smiley face" style="float:center;width:42px;height:42px;">
+        The image will float to the center of the text.</p>
+
+        <p>Image Maps: "map" tag to define an image with clickable areas: "map name="workmap""</p>
+
+        <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm" target="_blank">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm" target="_blank">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm" target="_blank">
+        </map>
+
+        <p>Background Image: use the CSS property background-image: "style="background-image:url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png")"</p>
+
+        <h2>Background Image</h2>
+
+        <a href="MyEx_Images_08.html">MyEx_Images_08.html</a>
+
+        <p>The "picture" Element: add more flexibility when specifying image resources</p>
+
+        <p>The browser will use the first "source" element with matching attribute values, and ignore any following "source" elements.</p>
+
+        <a href="MyEx_Images_09.html">MyEx_Images_09.html</a>               
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    
+<html>
+    <head>
+        <title>
+            HTML Lists
+        </title>
+        <style>
+            body { 
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                /* border: 1px solid black; */
+                border: 1px solid black;
+                /* border-collapse: collapse; */
+                border-collapse: collapse;
+            }        </style>
+
+    </head>
+    <body>
+        <h1>
+                HTML Lists
+        </h1>
+        <p>HTML List Example</p>
+        
+        <table>
+            <caption>HTML Lists</caption>
+            <tr>
+                <td><h2>An Unordered HTML List</h2></td>
+                <td><h2>An Ordered HTML List</h2></td>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>  
+                </td>
+                <td>
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <p>Unordered HTML List: tarts with the "ul" tag. Each list item starts with the "li" tag.</p>
+
+        <p>The list items will be marked with bullets (small black circles) by default</p>
+                
+            <ul>    
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        
+        <p>Unordered HTML List - Choose List Item Marker - disc - circle - square - none</p>
+
+        <p>"ul style="list-style-type:circle"</p>
+ 
+            <ul style="list-style-type:circle">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>   
+
+        <p>"ul style="list-style-type:none"</p>
+            <ul style="list-style-type:none">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+            </ul>
+
+        <p>Ordered HTML List: starts with the "ol" tag. Each list item starts with the "li" tag.</p>
+
+            <ol>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>   
+
+        <p>Ordered HTML List - The Type Attribute - "1" - "A" - "a" - "I" - "i"</p>
+
+        <p>"ol type="1""</p>
+
+            <ol type="1">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+    
+    
+        <p>"ol type="I""</p>
+
+            <ol type="I">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+    
+        <p>HTML Description Lists</p>
+
+        <p>The "dl" tag defines the description list, </p>
+        <p>the "dt" tag defines the term (name),</p>
+        <p>and the "dd" tag describes each term: </p>
+
+            <dl>
+                <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                    <dd>- white cold drink</dd>
+            </dl>
+    
+        <p>Nested HTML Lists - (lists inside lists):</p>
+
+            <ul>
+                <li>Coffee</li>
+                <li>Tea
+                  <ul>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                  </ul>
+                </li>
+                <li>Milk</li>
+            </ul>
+
+        <p>Horizontal Lists can be styled in many different ways with CSS. One popular way is to create a menu: </p>
+
+            <a href="MyEx_Lists_07.html">MyEx_Lists_07</a>
+
+
+        </body>
+</html>

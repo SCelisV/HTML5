@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML Layouts
+        </title>
+        <!-- <base href="https://www.w3schools.com/images/" target="_blank"> -->
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML Layouts
+        </h1>
+
+        <h2>HTML Layout Elements</h2>
+
+        <table>
+            <tr>
+                <td><img alt="HTML5 Semantic Elements" src="./images/img_sem_elements.gif" width="219" height="258"></td>
+                <td>
+                    <ul>
+                        <li>&lt;header&gt; - Defines a header for a document or a section</li>
+                        <li>&lt;nav&gt; - Defines a container for navigation links</li>
+                        <li>&lt;section&gt; - Defines a section in a document</li>
+                        <li>&lt;article&gt; - Defines an independent self-contained article</li>
+                        <li>&lt;aside&gt; - Defines content aside from the content (like a sidebar)</li>
+                        <li>&lt;footer&gt; - Defines a footer for a document or a section</li>
+                        <li>&lt;details&gt; - Defines additional details</li>
+                        <li>&lt;summary&gt; - Defines a heading for the &lt;details&gt; element</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+        <h2>HTML Layout Techniques - Each way has its pros and cons:</h2>
+        
+            <ul>
+                <li>HTML tables</li>
+                <li>CSS float property</li>
+                <li>CSS framework</li>
+                <li>CSS flexbox</li>
+            </ul>                           
+    
+            <table>
+                <tr>
+                    <td>HTML tables</td>
+                    <td>So, do not use tables for your page layout! They will bring a mess into your code. And imagine how hard it will be to redesign your site after a couple of months.</td>
+                </tr>    
+                <tr>
+                    <td>CSS framework</td>
+                    <td>If you want to create your layout fast, you can use a framework, like W3.CSS or Bootstrap.</td>
+                </tr>    
+                <tr>
+                    <td>CSS flexbox</td>
+                    <td>Flexbox is a new layout mode in CSS3. <br>
+                        Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices. 
+                        Disadvantages: Does not work in IE10 and earlier. <br>
+                           
+                        Learn more about flexbox in our CSS Flexbox chapter.
+                        <a href="MyEx_Layouts_02.html" target="_blank">Ex - CSS flexbox</a>
+                    </td>
+                </tr>    
+                <tr>
+                    <td>CSS float property</td>
+                    <td>It is common to do entire web layouts using the CSS float property. <br>
+                        Float is easy to learn - you just need to remember how the float and clear properties work. <br>
+                        Disadvantages: Floating elements are tied to the document flow, which may harm the flexibility. <br> 
+                        Learn more about float in our CSS Float and Clear chapter. <br>
+                        <a href="MyEx_Layouts_03.html" target="_blank">Ex - CSS float</a>
+                    </td>
+                </tr>    
+            </table>
+    </body>
+</html>

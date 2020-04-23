@@ -1,0 +1,402 @@
+MyNotes_HTML5
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+https://www.w3schools.com/tags/default.asp
+
+you must close all HTML elements properly
+recommends lowercase in HTML
+recommends quotes in HTML
+
+The <!DOCTYPE html> declaration defines this document to be HTML5
+The <html> element is the root element of an HTML page - defines the whole document.
+The <head> element contains meta information about the document
+The <title> element specifies a title for the document
+The <body> element contains the visible page content - defines the document body
+The <h1> element defines a large heading - There are 6 - 1 to 6.
+The <p> element defines a paragraph
+The <a href="http://www.w3schools.com"> Define a link</a>
+The <img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"> Define a image
+HTML Elements usually consists of a start tag and end tag.
+Empty elements do not have an end tag  <br> element (which indicates a line break), <br />.
+HTML Attributes - All HTML elements can have attributes - Attributes provide additional information about an element, 
+---------------
+
+are always specified in the start tag, usually come in name/value pairs like: name="value"
+href Attribute - The link address is specified in the href
+src Attribute - The filename of the image source is specified in the src
+width and height Attributes - specifies the width and height of the image
+alt Attribute - specifies an alternative text to be used, when an image cannot be displayed
+style Attribute - the styling of an element, like color, font, size
+lang Attribute - Declaring a language is important for accessibility applications - 
+	The first two letters specify the language (en). 
+	If there is a dialect, use two more letters (US)
+The title Attribute - will be displayed as a tooltip when you mouse over the paragraph
+
+https://www.w3schools.com/tags/ref_attributes.asp
+
+HTML Headings
+-------------
+Bigger Headings - with the style attribute, using the font-size property
+
+HTML Horizontal Rules - hr
+
+The HTML <head> Element - HTML metadata is data about the HTML document. Metadata is not displayed.
+
+HTML Paragraphs
+---------------
+The HTML <pre> Element - defines preformatted text.
+
+HTML Styles
+-----------
+Setting the style of an HTML element - The property is a CSS property. The value is a CSS value.
+
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+HTML Text Formatting
+--------------------
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Small text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text
+
+HTML Quotation and Citation Elements
+------------------------------------
+<abbr>	Defines an abbreviation or acronym
+<address>	Defines contact information for the author/owner of a document
+<bdo>	Defines the text direction
+<blockquote>	Defines a section that is quoted from another source
+<cite>	Defines the title of a work
+<q>	Defines a short inline quotation
+
+HTML Comments
+-------------
+Background Color
+Text Color
+Border Color
+Color Values
+In HTML, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:
+
+HTML Styles - CSS
+-----------------
+Styling HTML with CSS
+CSS stands for Cascading Style Sheets.
+
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+
+CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+
+CSS can be added to HTML elements in 3 ways:
+
+Inline - by using the style attribute in HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using an external CSS file
+
+The most common way to add CSS, is to keep the styles in separate CSS files. 
+However, here we will use inline and internal styling, because this is easier to demonstrate, and easier for you to try it yourself.
+
+CSS Fonts
+---------
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+
+External References
+-------------------
+
+External style sheets can be referenced with a full URL or with a path relative to the current web page.
+<link rel="stylesheet" href="https://www.w3schools.com/html/styles.css">
+
+This example links to a style sheet located in the html folder on the current web site:
+<link rel="stylesheet" href="/html/styles.css">
+
+This example links to a style sheet located in the same folder as the current page:
+<link rel="stylesheet" href="styles.css">
+
+HTML Links
+----------
+Syntax: <a href="url">link text</a> - <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+HTML Links - The target Attribute specifies where to open the linked document.
+
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+
+Use the <a> element to define a link
+Use the href attribute to define the link address
+Use the target attribute to define where to open the linked document
+Use the <img> element (inside <a>) to use an image as a link
+Use the id attribute (id="value") to define bookmarks in a page
+Use the href attribute (href="#value") to link to the bookmark
+
+HTML Images
+-----------
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes to define the size of the image
+Use the CSS width and height properties to define the size of the image (alternatively)
+Use the CSS float property to let the image float
+Use the HTML <map> element to define an image-map
+Use the HTML <area> element to define the clickable areas in the image-map
+Use the HTML <img>'s element usemap attribute to point to an image-map
+Use the HTML <picture> element to show different images for different devices
+
+<img>	Defines an image
+<map>	Defines an image-map
+<area>	Defines a clickable area inside an image-map
+<picture>	Defines a container for multiple image resources
+
+HTML Tables
+-----------
+Use the HTML <table> element to define a table
+Use the HTML <tr> element to define a table row
+Use the HTML <td> element to define a table data
+Use the HTML <th> element to define a table heading
+Use the HTML <caption> element to define a table caption
+Use the CSS border property to define a border
+Use the CSS border-collapse property to collapse cell borders
+Use the CSS padding property to add padding to cells
+Use the CSS text-align property to align cell text
+Use the CSS border-spacing property to set the spacing between cells
+Use the colspan attribute to make a cell span many columns
+Use the rowspan attribute to make a cell span many rows
+Use the id attribute to uniquely define one table
+<table>	Defines a table
+<th>	Defines a header cell in a table
+<tr>	Defines a row in a table
+<td>	Defines a cell in a table
+<caption>	Defines a table caption
+<colgroup>	Specifies a group of one or more columns in a table for formatting
+<col>	Specifies column properties for each column within a <colgroup> element
+<thead>	Groups the header content in a table
+<tbody>	Groups the body content in a table
+<tfoot>	Groups the footer content in a table
+
+HTML Lists
+-----------
+Use the HTML <ul> element to define an unordered list
+Use the CSS list-style-type property to define the list item marker
+Use the HTML <ol> element to define an ordered list
+Use the HTML type attribute to define the numbering type
+Use the HTML <li> element to define a list item
+Use the HTML <dl> element to define a description list
+Use the HTML <dt> element to define the description term
+Use the HTML <dd> element to describe the term in a description list
+Lists can be nested inside lists
+List items can contain other HTML elements
+Use the CSS property float:left or display:inline to display a list horizontally
+
+HTML Block and Inline Elements
+------------------------------
+Block-level Elements always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+
+- address - article - aside - blockquote - canvas - dd - div - dl - dt - fieldset - figcaption - figure - footer - form - h1 a h6 - header - hr - li - main - nav - noscript - ol - output - p - pre - section - table - tfoot - ul - video.
+
+Inline Elements does not start on a new line and only takes up as much width as necessary.
+
+- a - abbr - acronym - b - bdo - big - br - button - cite - code - dfn - em - i - img - input - kbd - label - map - object - q - samp - script - select - small - span - strong - sub - sup - textarea - time - tt - var.
+
+<div>	Defines a section in a document (block-level)
+<span>	Defines a section in a document (inline)
+
+HTML Iframes
+------------
+<iframe>	Defines an inline frame
+
+HTML JavaScript
+---------------
+<script>	Defines a client-side script
+<noscript>	Defines an alternate content for users that do not support client-side scripts
+
+HTML File Paths
+---------------
+&lt;img src="picture.jpg"&gt; - file is located in the same folder as the current page.
+&lt;img src="images/picture.jpg"&gt; - file is located in the images folder in the current folder
+&lt;img src="/images/picture.jpg"&gt; - file is located in the images folder at the root of the current web
+&lt;img src="../picture.jpg"&gt; - file is located in the folder one level up from the current folder
+
+Best Practice
+It is a best practice to use relative file paths (if possible).
+
+When using relative file paths, your web pages will not be bound to your current base URL. 
+All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.
+
+HTML head Elements
+------------------
+<head>	Defines information about the document
+<title>	Defines the title of a document
+<base>	Defines a default address or a default target for all links on a page
+<link>	Defines the relationship between a document and an external resource
+<meta>	Defines metadata about an HTML document
+<script>	Defines a client-side script
+<style>	Defines style information for a document
+
+HTML Layouts
+------------
+HTML Layout Techniques
+There are four different ways to create multicolumn layouts. Each way has its pros and cons:
+
+HTML tables
+CSS float property
+CSS framework
+CSS flexbox
+
+HTML Responsive Web Design
+--------------------------
+Setting The Viewport
+
+HTML Computer Code Elements
+---------------------------
+Tag	Description
+<code>	Defines programming code
+<kbd>	Defines keyboard input 
+<samp>	Defines computer output
+<var>	Defines a variable
+<pre>	Defines preformatted text
+
+HTML Character Entities
+-----------------------
+non-breaking space	&nbsp;	&#160;
+<	less than	&lt;	&#60;
+>	greater than	&gt;	&#62;
+&	ampersand	&amp;	&#38;
+"	double quotation mark	&quot;	&#34;
+'	single quotation mark (apostrophe)	&apos;	&#39;
+¢	cent	&cent;	&#162;
+£	pound	&pound;	&#163;
+¥	yen	&yen;	&#165;
+€	euro	&euro;	&#8364;
+©	copyright	&copy;	&#169;
+®	registered trademark	&reg;	&#174;
+
+HTML Symbols and HTML Charset
+-----------------------------
+
+HTML Uniform Resource Locators - URL
+------------------------------
+scheme://prefix.domain:port/path/filename
+
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+
+Common URL Schemes
+
+Scheme	Short for	Used for
+http	HyperText Transfer Protocol	Common web pages. Not encrypted
+https	Secure HyperText Transfer Protocol	Secure web pages. Encrypted
+ftp	File Transfer Protocol	Downloading or uploading files
+file	 	A file on your computer
+
+URL Encoding
+
+HTML Forms
+----------
+Also note that the default width of a text field is 20 characters.
+
+Here is the list of <form> attributes:
+
+accept-charset:	Specifies the charset used in the submitted form (default: the page charset).
+action:	Specifies an address (url) where to submit the form (default: the submitting page).
+autocomplete:	Specifies if the browser should autocomplete the form (default: on).
+enctype:	Specifies the encoding of the submitted data (default: is url-encoded).
+method:	Specifies the HTTP method used when submitting the form (default: GET).
+name:	Specifies a name used to identify the form (for DOM usage: document.forms.name).
+novalidate:	Specifies that the browser should not validate the form.
+target:	Specifies the target of the address in the action attribute (default: _self).
+
+HTML Form Elements
+------------------
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+HTML 5 <datalist>	Specifies a list of pre-defined options for input controls
+HTML 5 <output>	Defines the result of a calculation
+
+HTML Input Types
+----------------
+Input Type Text
+Input Type Password
+Input Type Submit
+Input Type Reset
+Input Type Radio
+Input Type Checkbox
+Input Type Button
+
+HTML5 Input Types
+-----------------
+color
+date
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+HTML Input Attributes
+---------------------
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+
+The value Attribute
+The readonly Attribute
+The disabled Attribute
+The size Attribute
+The maxlength Attribute
+HTML5 Attributes     
+The autocomplete Attribute
+The novalidate Attribute
+The autofocus Attribute
+The form Attribute
+The formaction Attribute          
+The formenctype Attribute
+The formmethod Attribute
+The formnovalidate Attribute
+The formtarget Attribute
+The height and width Attributes
+The list Attribute
+The min and max Attributes
+The multiple Attribute
+The pattern Attribute
+The placeholder Attribute
+The required Attribute
+The step Attribute
+
+	

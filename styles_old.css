@@ -1,0 +1,13 @@
+
+header, nav, section, article, footer, div.city {
+    border: 1px solid yellow;
+    margin: 5px;
+    padding: 8px;
+}
+/* p.intro {font-family: Verdana; font-size: 1em;} */
+body {
+    background-color: lightyellow;
+    font-family: "Arial Black", Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+  }

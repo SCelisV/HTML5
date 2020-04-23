@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML Block and Inline Elements
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                /* border: 1px solid black; */
+                border: 1px solid black;
+                /* border-collapse: collapse; */
+                border-collapse: collapse;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>
+                HTML Block and Inline Elements
+        </h1>
+
+            <p><h3>Block-level Elements</h3></p>
+
+
+<p>Block level elements in HTML:</p>
+<div>
+  <div><h3> - address - Contact information</h3></div>
+
+    <address>
+            Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+    </address>
+
+<div><h3> - article - </h3></div>
+
+    <article>
+        <h1>Google Chrome</h1>
+        <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+    </article>
+
+    <div><h3> - aside - </h3></div>
+
+    <p>My family and I visited The Epcot center this summer.</p>
+
+    <aside>
+    <h3> - Epcot Center - </h3>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+
+
+    <div><h3> - blockquote - A section that is quoted from another source</h3></div>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+    </blockquote>
+
+
+    <div><h3> - canvas - Draw a red square, on the fly, and show it inside the "canvas" element</h3></div>
+
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 80, 80);
+    </script>
+
+    <div><h3> - dd - A description list, with terms and descriptions</h3></div>
+
+    <dl>
+            <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+            <dt>Milk</dt>
+                <dd>White cold drink</dd>
+    </dl>
+
+    <div><h3> - div - A section in a document that will be displayed in blue:</h3></div>
+
+    <div style="color:#0000FF">
+            <h3>This is a heading</h3>
+            <p>This is a paragraph.</p>
+    </div>
+
+    <div><h3> - dl - A description list, with terms and descriptions:</h3></div>
+
+    <dl>
+        <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+            <dd>White cold drink</dd>
+    </dl>
+
+    <div><h3> - dt - A description list, with terms and descriptions:</h3></div>
+
+    <dl>
+        <dt>Coffee</dt>
+            <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+            <dd>White cold drink</dd>
+    </dl>
+
+    <div><h3> - fieldset - Group related elements in a form:</h3></div>
+
+    <form>
+        <fieldset>
+            <legend>Personalia:</legend>
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+            Date of birth: <input type="text">
+        </fieldset>
+    </form>
+
+
+    <div><h3> - figcaption - to mark up a photo in a document. The "figure" element also contains a caption:</h3></div>
+
+    <figure>
+            <img src=".\images\img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+            <figcaption>Fig1. - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
+
+    <div><h3> - figure - to mark up a photo in a document:</h3></div>
+
+    <figure>
+            <img src=".\images\img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+    </figure>
+
+    <div><h3> - footer - section in a document:</h3></div>
+
+    <footer>
+            <p>Posted by: Hege Refsnes</p>
+            <p>Contact information: <a href="mailto:someone@example.com">
+            someone@example.com</a>.</p>
+    </footer>
+
+
+    <div><h3> - form - form with two input fields and one submit button:</h3></div>
+
+    <form action="/action_page.php" method="get">
+        First name: <input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div><h3> - h1-h6 - The six different HTML headings:</h3></div>
+
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <div><h3> - header - A header for an "article" :</h3></div>
+
+        <article>
+          <header>
+            <h1>Most important heading here</h1>
+            <h3>Less important heading here</h3>
+            <p>Some additional information here</p>
+          </header>
+          <p>Lorem Ipsum dolor set amet....</p>
+        </article>
+
+    <div><h3> - hr - to define a thematic change in the content:</h3></div>
+
+    <h1>HTML</h1>
+    <p>HTML is a language for describing web pages.....</p>
+    
+    <hr>
+    
+    <h1>CSS</h1>
+    <p>CSS defines how to display HTML elements.....</p>
+
+    <div><h3> - li - One ordered (ol) and one unordered (ul) HTML list:</h3></div>
+
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+        
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+
+    <div><h3> - main - </h3></div>
+
+    <main>
+        <h1>Web Browsers</h1>
+        <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+      
+        <article>
+          <h1>Google Chrome</h1>
+          <p>Google Chrome is a free, open-source web browser developed by Google,
+          released in 2008.</p>
+        </article>
+      
+        <article>
+          <h1>Internet Explorer</h1>
+          <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+        </article>
+      
+        <article>
+          <h1>Mozilla Firefox</h1>
+          <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+        </article>
+    </main>
+
+    <div><h3> - nav -  set of navigation links:</h3></div>
+
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+
+    <div><h3> - noscript - </h3></div>
+
+    <script>
+            document.write("Hello World!")
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+    <div><h3> - ol - 2 different ordered lists: start="50"</h3></div>
+ 
+    <ol>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+    
+    <ol start="50">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ol>
+
+    <div><h3> - output - Perform a calculation and show the result in an "output" element:</h3></div>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+            <input type="range" id="a" value="50">100
+            +<input type="number" id="b" value="50">
+            =<output name="x" for="a b"></output>
+        </form>
+
+    <div><h3> - p - paragraph is marked up as follows:</h3></div>
+
+    <p>This is some text in a paragraph.</p>
+
+    <div><h3> - pre - Preformatted text:</h3></div>
+
+    <pre>
+    Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks
+    </pre>
+
+    <div><h3> - section - section in a document, explaining what WWF is:</h3></div>
+
+    <section>
+      <h1>WWF</h1>
+      <p>The World Wide Fund for Nature (WWF) is....</p>
+    </section>
+
+    <div><h3> - table - containing two columns and two rows:</h3></div>
+
+    <table>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+    </table>
+
+    <div><h3> - tfoot - </h3></div>
+
+    table with a "thead, "tfoot", and a "tbody" element:
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Month</th>
+                  <th>Savings</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td>Sum</td>
+                  <td>$180</td>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>January</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>February</td>
+                  <td>$80</td>
+                </tr>
+              </tbody>
+            </table>
+
+    
+    <div><h3> - ul - unordered HTML list:</h3></div>
+
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <div><h3> - video - Play a video:</h3></div>
+
+
+    <video width="320" height="240" controls>
+      <source src="movie.mp4" type="video/mp4">
+      <source src="movie.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+
+
+</div>
+
+<p>Inline Elements in HTML: does not start on a new line and only takes up as much width as necessary</p>
+<div>
+    <div><h3> - a - A link to W3Schools.com:</h3></div>
+
+    <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+
+
+    <div><h3> - abbr - abbreviation is marked up as follows:</h3></div>
+
+        The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+    <div><h3> - acronym - acronym is marked up as follows:</h3></div>
+  
+
+    Can I get this <acronym title="as soon as possible">ASAP</acronym>?
+
+    <div><h3> - b - </h3></div>
+
+    <p>This is normal text - <b>and this is bold text</b>.</p>
+
+    <div><h3> - bdo - Specify the text direction:</h3></div>
+
+    <bdo dir="rtl">
+       This text will go right-to-left.
+    </bdo> 
+
+    <div><h3> - big - Make text bigger than normal:</h3></div>
+
+    <p><big>Bigger text</big></p>
+
+    <div><h3> - br - A line break is marked up as follows:</h3></div>
+    
+    This text contains<br>a line break.
+
+    <div><h3> - button - A clickable button is marked up as follows:</h3></div>
+
+    <button type="button">Click Me!</button>
+
+    <div><h3> - cite - Define the title of a work with the "cite" tag:</h3></div>
+
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+    <div><h3> - code - Format text in a document:</h3></div>
+
+    <code>A piece of computer code</code>
+
+    <div><h3> - dfn - Mark up the defining instance of a term:</h3></div>
+
+    <p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+    <div><h3> - em - Format text in a document:</h3></div>
+
+    <em>Emphasized text</em>
+
+    <div><h3> - i - </h3></div>
+
+    <p>He named his car <i>The lightning</i>, because it was very fast.</p>
+
+    <div><h3> - img - to insert an image:</h3></div>
+
+    <img src="smiley.gif" alt="Smiley face" height="42" width="42">
+
+    <div><h3> - input - An HTML form with three input fields; two text fields and one submit button:</h3></div>
+
+    <form action="/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <div><h3> - kbd - Format text in a document:</h3></div>
+
+    <kbd>Keyboard input</kbd>
+
+
+    <div><h3> - label - Three radio buttons with labels:</h3></div>
+
+    <form action="/action_page.php">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male"><br>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female"><br>
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <div><h3> - map - An image-map, with clickable areas:</h3></div>
+
+    <img src=".\images\planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+    
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun">
+      <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury">
+      <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus">
+    </map>
+
+    <div><h3> - object - How to use the "object" element to embed a Flash file:</h3></div>
+
+        <object width="400" height="400" data=".\images\helloworld.swf"></object>
+
+    <div><h3> - q - Mark up a short quotation:</h3></div>
+
+    <p>WWF's goal is to: 
+    <q>Build a future where people live in harmony with nature.</q>
+    We hope they succeed.</p>
+
+    <div><h3> - samp - Format text in a document:</h3></div>
+
+    <samp>Sample output from a computer program</samp>
+
+    <div><h3> - script - Write "Hello JavaScript!" with JavaScript:</h3></div>
+    
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello JavaScript! by Me";
+
+    </script> 
+        
+    <div><h3> - select - Create a drop-down list with four options:</h3></div>
+
+    <select>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <div><h3> - small - Define a smaller text:</h3></div>
+
+    <p>W3Schools.com - the world's largest web development site.</p>
+    <p><small>Copyright 1999-2050 by Refsnes Data</small></p>
+
+    <div><h3> - span - element used to color a part of a text:</h3></div>
+
+    <p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+    <div><h3> - strong - Format text in a document:</h3></div>
+
+    <strong>Strong text</strong>
+
+    <div><h3> - sub - Subscript text:</h3></div>
+
+    <p>This text contains <sub>subscript</sub> text.</p>
+
+    <div><h3> - sup - Superscript text:</h3></div>
+
+    <p>This text contains <sup>superscript</sup> text.</p>
+
+    <div><h3> - textarea - An HTML text area:</h3></div>
+
+    <textarea rows="4" cols="50">
+        At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies. 
+        </textarea>
+
+    <div><h3> - time - How to define a time and a date:</h3></div>
+
+    <p>We open at <time>10:00</time> every morning.</p>
+    
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+    <div><h3> - tt - Define teletype text:</h3></div>
+
+    <p><tt>Teletype text</tt></p>
+
+    <div><h3> - var - Format text in a document:</h3></div>
+
+    <var>Variable</var>
+
+</div>
+
+    <p>The "div" Element: is often used as a container for other HTML elements.</p>
+
+    <p>When used together with CSS, the "div" element can be used to style blocks of content:</p>    
+
+    <div style="background-color:black;color:white;padding:20px;">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
+
+
+    <p>The "span" Element: is often used as a container for some text.</p>
+
+    <p>When used together with CSS, the "span" element can be used to style parts of the text:</p>
+            
+        <h1>My <span style="color:red">Important</span> Heading</h1>
+
+    </body>
+</html>

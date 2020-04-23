@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- para crear a new element in IE9 y anteriores -->
+        <!-- HTML5shiv to provide compatibility older IE9 -->
+            <script>document.createElement("mystyle")</script>
+                <style>
+                    mystyle{
+                        display: block;
+                        background-color: #ddddaa;
+                        padding: 100px;
+                        font-size: 30px;
+                    }
+                </style>
+            <title>Title - section - article - header</title>
+    </head>
+
+    <body>
+        Content of the document......
+        <article>
+            <h1>article - This is a new article</h1>
+                <mystyle>This is a paragraph with a new elemment called mystyle.
+                    <section>
+                        <header>
+                                <h1>article- This es a new section</h1>
+                                <p>WWF's mission:</p>
+                        </header>
+                    </section>
+                </mystyle>
+        </article>
+        <article>
+            <header>
+                <h1>This is a new article</h1>
+                <p>parrafo</p>
+            </header>
+                <p>parrafo.</p>
+        </article>
+    </body>
+
+</html>

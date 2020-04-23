@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML Iframes
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+            table, th, td {
+                /* border: 1px solid black; */
+                border: 1px solid black;
+                /* border-collapse: collapse; */
+                border-collapse: collapse;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML Iframes
+        </h1>
+
+        <h2>An iframe is used to display a web page within a web page</h2>
+
+        <h3>Syntax: &lt;iframe src="URL"&gt;&lt;/iframe&gt;</h3>
+
+        <h3>Set Height and Width: height="200" width="300"</h3>
+
+        <iframe src="./html/demo_iframe.htm" height="200" width="300"></iframe>
+
+        <h3>Iframe - Remove the Border: By default, an iframe has a border around it: style=&quot;border:none;&quot;</h3>
+
+        <iframe src="./html/demo_iframe.htm" style="border:none;"></iframe>
+
+        <iframe src="./html/demo_iframe.htm" style="border:2px solid grey;"></iframe>
+
+        <h3>Target for a Link: The target attribute of the link must refer to the name attribute of the iframe</h3>
+
+        <iframe height="300px" width="100%" src="./html/demo_iframe.htm" name="iframe_a"></iframe>
+
+        <p><a href="https://www.masbytes.es/" target="iframe_a">MasBytes</a></p>
+        
+        <p>When the target of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+    </body>
+</html>

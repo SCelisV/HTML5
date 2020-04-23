@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            HTML Input Types
+        </title>
+        <style>
+            body {
+                background-image:url("./images/background.jpg");
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1>
+            HTML Input Types
+        </h1>
+        <h2>Input Type Text</h2>
+        <h3>defines a one-line text input field: &lt;input type="text"&gt;</h3>
+
+        <form action="">
+            First name:<br>
+            <input type="text" id="firstname" name="firstname" value="firstname"><br>
+            Last name:<br>
+            <input type="text" id="lastname" name="lastname" value="lastname"><br>
+        </form>
+
+        <h2>Input Type Password</h2>
+        <h3>defines un password file: &lt;input type="password"&gt;</h3>
+
+        <form action="">
+            User name:
+            <input type="text" id="username" name="username" value="username">
+            User password:
+            <input type="password" id="pasword" name="password" value="password">
+        </form>
+
+        <h2>Input Type Submit</h2>
+        <h3>defines a button for submitting form data to a form-handler: &lt;input type="submit"&gt;</h3>
+
+        <form action="">
+            FirstName: <input type="text" name="firstname" id="firstname" value="firstname">
+            Lastname: <input type="text" name="lastname" id="lastname" value="lastname">
+            <input type="submit" id="ok" name="ok" value="Submit">
+        </form>
+
+        <h2>Input Type Reset</h2>
+        <h3>defines a reset button that will reset all form values to their default values: &lt;input type="reset"&gt;</h3>
+
+        <form>
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey"><br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </form>
+
+        <h2>Input Type Radio</h2>
+        <h3>defines a radio button: &lt;input type="radio"&gt;</h3>
+        <form action="">
+            <input type="radio" name="gender" id="female" value="female" checked>female <br>
+            <input type="radio" name="gender" id="male" value="male">male <br>
+            <input type="radio" name="gender" id="other" value="other">other <br>
+        </form>
+
+        <h2>Input Type Checkbox</h2>
+        <h3>defines a checkbox: &lt;input type="checkbox"&gt;</h3>
+        <form action="">
+            <input type="checkbox" name="vehicle1" id="vehicle1" value="vehicle1" checked>vehicle1 <br>
+            <input type="checkbox" name="vehicle2" id="vehicle2" value="vehicle2"checked>vehicle2 <br>
+        </form>
+
+        <h2>Input Type Button</h2>
+        <h3>defines a button:&lt;input type="button"&gt;</h3>
+        <form action="">
+            <input type="button" onclick="alert("Hello World")" value="ClickMe!">
+        </form>
+
+        <h1>HTML5 Input Types</h1>
+
+        <h2>Input Type Color</h2>
+        <h3>is used for input fields that should contain a color: &lt;input type="color"&gt;</h3>
+
+        <form action="">
+            Seleccione su color favorito:
+            <input type="color" name="mycolor">
+        </form>
+
+        <h2>Input Type Date</h2>
+        <h3>is used for input fields that should contain a date: &lt;input type="date"&gt;</h3>
+
+        <form action="">
+            Birthay:
+            <input type="date" name="myBirthay">
+        </form>
+
+        Puede tener restricciones de fecha:
+        <form>
+            Enter a date before 1980-01-01:
+            <input type="date" name="bday" max="1979-12-31"><br>
+            Enter a date after 2000-01-01:
+            <input type="date" name="bday" min="2000-01-02"><br>
+        </form>
+
+        <h2>Input Type Datetime-local</h2>
+        <h3>specifies a date and time input field, with no time zone: &lt;input type="datetime-local"&gt;</h3>
+
+        <form>
+            Birthday (date and time):
+            <input type="datetime-local" name="bdaytime">
+        </form>
+
+        <h2>Input Type Email</h2>
+        <h3>is used for input fields that should contain an e-mail address: &lt;input type="email"&gt;</h3>
+
+        <form action="">
+            <input type="email" name="email" id="email">
+        </form>
+
+        <h2>Input Type Month</h2>
+        <h3>allows the user to select a month and year: &lt;input type="month"&gt;</h3>
+
+        <form action="">
+            Birthday (month and year):
+            <input type="month" name="bdaymonth">
+        </form>
+
+        <h2>Input Type Number</h2>
+        <h3>defines a numeric input field: &lt;input type="number"&gt;</h3>
+
+        <form action="">
+            Quantity (between 1 and 5):
+            <input type="number" name="quantity" min="1" max="5">
+        </form>
+
+        <h2>Input Restrictions</h2>
+        <h4>
+            <table>
+                <tr>
+                    <td>disabled</td>
+                    <td>Specifies that an input field should be disabled <br></td>
+                </tr>
+                <tr>
+                    <td>max			</td><td>Specifies the maximum value for an input field  </td>
+                <tr>
+                    <td>maxlength	</td><td>Specifies the maximum number of character for an input field  </td>
+                </tr>
+                <tr>
+                    <td>min			</td><td>Specifies the minimum value for an input field  </td>
+                </tr>
+                <tr>
+                    <td>pattern		</td><td>Specifies a regular expression to check the input value against  </td>
+                </tr>
+                <tr>
+
+                    <td>readonly	</td><td>Specifies that an input field is read only (cannot be changed)  </td>
+                </tr>
+                <tr>
+                    <td>required	</td><td>Specifies that an input field is required (must be filled out)  </td>
+                </tr>
+                <tr>
+                    <td>size		</td><td>Specifies the width (in characters) of an input field  </td>
+                </tr>
+                <tr>
+                    <td>step		</td><td>Specifies the legal number intervals for an input field  </td>
+                </tr>
+                    <td>value		</td><td>Specifies the default value for an input field  </td>
+
+                </tr>
+            </table>
+        </h4>
+
+        <form>
+            Quantity:
+            <input type="number" name="points" min="10" max="100" step="10" value="30">
+        </form>
+
+        <h2>Input Type Range</h2>
+        <h3>defines a control for entering a number whose exact value is not important: </h3>
+        <h3>Default range is 0 to 100. </h3>
+        <h3>However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:</h3>
+
+        <form action="">
+            <input type="range" name="points" min="10" max="20">
+        </form>
+
+        <h2>Input Type Search</h2>
+        <h3>is used for search fields : &lt;input type="search"&gt;</h3>
+
+        <form action="">
+            <input type="search" name="googlesearch">
+        </form>
+
+        <h2>Input Type Tel</h2>
+        <h3>is used for input fields that should contain a telephone number: &lt;input type="tel"&gt;</h3>
+
+        <form>
+            Telephone:
+            <input type="tel" name="usrtel">
+        </form>
+
+        <h2>Input Type Url</h2>
+        <h3>is used for input fields that should contain a URL address: &lt;input type="url"&gt;</h3>
+
+        <form>
+            Add your homepage:
+            <input type="url" name="homepage">
+        </form>
+
+        <h2>Input Type Week</h2>
+        <h3>allows the user to select a week and year: &lt;input type="week"&gt;</h3>
+        <form>
+            Select a week:
+            <input type="week" name="week_year">
+        </form>
+              
+
+    </body>
+</html>
+
